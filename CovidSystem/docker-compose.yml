@@ -1,24 +1,30 @@
-version: '3.7'
+version: '3.8'
 
 services:
-  sql-server:
-    image: mcr.microsoft.com/mssql/server:2019-latest
-    container_name: sql-server
+  mysql:
+    image: mysql:latest
+    restart: always
     environment:
-      SA_PASSWORD: "YourStrong!Passw0rd"
-      ACCEPT_EULA: "Y"
-      # MSSQL_DB_NAME: "CovidDb"
+      MYSQL_ROOT_PASSWORD: yourpassword
+      MYSQL_DATABASE: covidSystemDb
+      MYSQL_USER: yourusername
+      MYSQL_PASSWORD: yourpassword
     ports:
-      - "1433:1433"
-    # volumes:
-    #   - ./Sql/:/docker-entrypoint-initdb.d/
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
 
-  # covid-system:
-  #   image: covid-system
-  #   container_name: covid-system-api
-  #   environment:
-  #     - ConnectionStrings__DefaultConnection=Server=sql-server,1433;Database=CovidDb;User=sa;Password=YourStrong!Passw0rd
-  #   ports:
-  #     - "5000:80"
-  #   depends_on:
-  #     - sql-server
+  covid-system:
+    build: .
+    container_name: covid-system-api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Server=mysql;Port=3306;Database=covidSystemDb;Uid=yourusername;Pwd=yourpassword;
+    ports:
+      - "5001:80"
+    depends_on:
+      - mysql
+
+volumes:
+  mysql_data:
+    driver: local

@@ -1,7 +1,9 @@
 ﻿using CovidSystem.DbContexts;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Http;
 using System;
+using System.ComponentModel.DataAnnotations;
 using System.Threading.Tasks;
 
 [ApiController]
@@ -9,25 +11,50 @@ using System.Threading.Tasks;
 public class MembersController : ControllerBase
 {
     private readonly CovidDbContext _context;
-
-    public MembersController(CovidDbContext context)
+    private readonly IMemberValidationService _memberValidationService;
+    private readonly IImageService _imageService;
+    // Constructor injecting CovidDbContext, IMemberValidationService, and IImageService
+    public MembersController(CovidDbContext context,
+        IMemberValidationService memberValidationService,
+        IImageService imageService)
     {
         _context = context;
+        _memberValidationService = memberValidationService;
+        _imageService = imageService;
     }
 
-    [HttpPost]
+    [HttpPost("UploadImage")]
+    public async Task<ActionResult<string>> UploadImage(string memberId, IFormFile file)
+    {
+        var member = await _context.Members.FirstOrDefaultAsync(m => m.MemberId == memberId);
+        if (member != null)
+            member.ImageHash = await _imageService.GetImageHash(file);
+        else
+            return NotFound();
+        return Ok(member.ImageHash);
+    }
+
+    [HttpPost("CreateMember")]
     public async Task<ActionResult<Member>> CreateMember(Member member)
     {
-        if (!ModelState.IsValid)
+        var validationResults = _memberValidationService.ValidateMember(member);
+        if (validationResults.Any())
         {
-            return BadRequest(ModelState);
+            return BadRequest(validationResults);
         }
-
         try
         {
-            _context.Members.Add(member);
-            await _context.SaveChangesAsync();
 
+            _context.Members.Add(member);
+            // If the member has vaccinations, add them to the context
+            if (member.Vaccinations != null && member.Vaccinations.Any())
+            {
+                foreach (var vaccination in member.Vaccinations)
+                {
+                    _context.Vaccinations.Add(vaccination);
+                }
+            }
+            await _context.SaveChangesAsync();
             return CreatedAtAction(nameof(GetMember), new { id = member.MemberId }, member);
         }
         catch (Exception ex)
@@ -35,25 +62,42 @@ public class MembersController : ControllerBase
             return StatusCode(500, $"Error: {ex.Message}");
         }
     }
-
     [HttpGet("{id}")]
-    public async Task<ActionResult<Member>> GetMember(int id)
+    public async Task<ActionResult<Member>> GetMember(string id)
     {
-        var member = await _context.Members.FindAsync(id);
-
-        if (member == null)
+        try
         {
-            return NotFound();
+            var member = await _context.Members
+                               .Include(m => m.Vaccinations) // Include vaccinations
+                                   .ThenInclude(v => v.Manufacturer) // Include manufacturer for each vaccination
+                               .FirstOrDefaultAsync(m => m.MemberId == id);
+
+            if (member == null)
+            {
+                return NotFound();
+            }
+            return Ok(member);
         }
-
-        return Ok(member);
+        catch (Exception ex)
+        {
+            return StatusCode(500, $"Error: {ex.Message}");
+        }
     }
-
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Member>>> GetMembers()
     {
-        var members = await _context.Members.ToListAsync();
-        return Ok(members);
-    }
+        try
+        {
+            var members = await _context.Members
+                               .Include(m => m.Vaccinations)
+                                   .ThenInclude(v => v.Manufacturer)
+                               .ToListAsync();
 
+            return Ok(members);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, $"Error: {ex.Message}");
+        }
+    }
 }

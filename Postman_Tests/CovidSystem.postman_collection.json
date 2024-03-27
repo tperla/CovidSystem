@@ -1,0 +1,1855 @@
+{
+	"info": {
+		"_postman_id": "1ef4953d-2f7b-4d4a-9c8b-d4c3084a5d23",
+		"name": "CovidSystem",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31297109"
+	},
+	"item": [
+		{
+			"name": "DataSummery",
+			"item": [
+				{
+					"name": "GetGraphData",
+					"item": [
+						{
+							"name": "/DataSummery/GetGraphData",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:5001/DataSummery/GetGraphData",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"DataSummery",
+										"GetGraphData"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/DataSummery/GetGraphData-Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/DataSummery/GetGraphData",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"DataSummery",
+												"GetGraphData"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 26 Mar 2024 23:29:57 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										}
+									],
+									"cookie": [],
+									"body": "[]"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "GetNotVaccinatedMembers",
+					"item": [
+						{
+							"name": "/DataSummery/GetNotVaccinatedMembers",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/DataSummery/GetNotVaccinatedMembers",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"DataSummery",
+										"GetNotVaccinatedMembers"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/DataSummery/GetNotVaccinatedMembers-Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/DataSummery/GetNotVaccinatedMembers",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"DataSummery",
+												"GetNotVaccinatedMembers"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 26 Mar 2024 23:29:11 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										}
+									],
+									"cookie": [],
+									"body": "18"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Manufacturers",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "/Manufacturers/:id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/Manufacturers/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Manufacturers",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "<integer>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/Manufacturers/:id-Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/Manufacturers/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"Manufacturers",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "3",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 26 Mar 2024 23:37:55 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"manufacturerId\": 3,\n    \"manufacturerName\": \"<Novhox>\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "/Manufacturers",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "text/plain"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"manufacturerName\": \"<string>\",\n  \"manufacturerId\": \"<integer>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/Manufacturers",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Manufacturers"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/Manufacturers-Full-Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"manufacturerName\": \"<Novhox>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/Manufacturers",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Manufacturers"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Mar 2024 23:32:54 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Location",
+									"value": "http://localhost:5001/Manufacturers/3"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"manufacturerId\": 3,\n    \"manufacturerName\": \"<Novhox>\"\n}"
+						},
+						{
+							"name": "/Manufacturers-WithoutName-Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/Manufacturers",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Manufacturers"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/problem+json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Mar 2024 23:33:39 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"type\": \"https://tools.ietf.org/html/rfc7231#section-6.5.1\",\n    \"title\": \"One or more validation errors occurred.\",\n    \"status\": 400,\n    \"traceId\": \"00-3e887ab0f351a466c2881cba4732f5e4-1aca57c514742f51-00\",\n    \"errors\": {\n        \"ManufacturerName\": [\n            \"Manufacturer name is required\"\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "/Manufacturers",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/plain"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/Manufacturers",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Manufacturers"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/Manufacturers-Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/Manufacturers",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Manufacturers"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Mar 2024 23:34:37 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"manufacturerId\": 1,\n        \"manufacturerName\": \"Fizer\"\n    },\n    {\n        \"manufacturerId\": 2,\n        \"manufacturerName\": \"Moderna\"\n    },\n    {\n        \"manufacturerId\": 3,\n        \"manufacturerName\": \"<Novhox>\"\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Members",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "/Members/:id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/Members/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Members",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "<string>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/Members/:id-Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											},
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [],
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/Members/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"Members",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "325324713"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 26 Mar 2024 23:26:42 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"memberId\": \"325324713\",\n    \"firstName\": \"Tali\",\n    \"lastName\": \"Perla\",\n    \"address\": \"Daniel 20 Bnei Brack\",\n    \"birthDate\": \"2003-07-17T00:00:00\",\n    \"phone\": \"0533162293\",\n    \"cellPhone\": \"036164096\",\n    \"positiveResultDate\": null,\n    \"recoveryDate\": null,\n    \"vaccinations\": null\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "/Members",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "multipart/form-data"
+							},
+							{
+								"key": "Accept",
+								"value": "text/plain"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "address",
+									"value": "<string>",
+									"description": "(Required) ",
+									"type": "text"
+								},
+								{
+									"key": "birthDate",
+									"value": "<date>",
+									"description": "(Required) ",
+									"type": "text"
+								},
+								{
+									"key": "firstName",
+									"value": "<string>",
+									"description": "(Required) ",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "<string>",
+									"description": "(Required) ",
+									"type": "text"
+								},
+								{
+									"key": "memberId",
+									"value": "<string>",
+									"description": "(Required) ",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "<string>",
+									"type": "text"
+								},
+								{
+									"key": "cellPhone",
+									"value": "<string>",
+									"type": "text"
+								},
+								{
+									"key": "positiveResultDate",
+									"value": "<date>",
+									"type": "text"
+								},
+								{
+									"key": "recoveryDate",
+									"value": "<date>",
+									"type": "text"
+								},
+								{
+									"key": "vaccinations",
+									"value": "[object Object],[object Object]",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/Members",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Members"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/Members-Full-Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"address\": \"Daniel, 20, Bnei Brack\",\r\n    \"birthDate\": \"2003-07-17\",\r\n    \"firstName\": \"Tali\",\r\n    \"lastName\": \"Perla\",\r\n    \"memberId\": \"654384222\",\r\n    \"phone\": \"036164096\",\r\n    \"cellPhone\": \"0533162293\",\r\n    \"positiveResultDate\": \"2022-02-16\",\r\n    \"recoveryDate\": \"2022-02-26\"\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:5001/Members/CreateMember",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"Members",
+										"CreateMember"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Mar 2024 22:47:13 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Location",
+									"value": "http://localhost:5001/Members/654384222"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"memberId\": \"654384222\",\n    \"firstName\": \"Tali\",\n    \"lastName\": \"Perla\",\n    \"address\": \"Daniel, 20, Bnei Brack\",\n    \"birthDate\": \"2003-07-17T00:00:00\",\n    \"phone\": \"036164096\",\n    \"cellPhone\": \"0533162293\",\n    \"positiveResultDate\": \"2022-02-16T00:00:00\",\n    \"recoveryDate\": \"2022-02-26T00:00:00\",\n    \"vaccinations\": null\n}"
+						},
+						{
+							"name": "/Members-WithoutFirstName-Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"address\": \"Daniel, 20, Bnei Brack\",\r\n    \"birthDate\": \"2003-07-17\",\r\n    \"lastName\": \"Perla\",\r\n    \"memberId\": \"654384222\",\r\n    \"phone\": \"036164096\",\r\n    \"cellPhone\": \"0533162293\",\r\n    \"positiveResultDate\": \"2022-02-16\",\r\n    \"recoveryDate\": \"2022-02-26\"\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:5001/Members",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"Members"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/problem+json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Mar 2024 22:51:49 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"type\": \"https://tools.ietf.org/html/rfc7231#section-6.5.1\",\n    \"title\": \"One or more validation errors occurred.\",\n    \"status\": 400,\n    \"traceId\": \"00-bd44304f522c5e456985ae490575fa81-9ca38e1f1410c96f-00\",\n    \"errors\": {\n        \"FirstName\": [\n            \"First name is required\"\n        ]\n    }\n}"
+						},
+						{
+							"name": "/Members-AddressNotValid-Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"address\": \"Daniel\",\r\n    \"birthDate\": \"2003-07-17\",\r\n    \"firstName\": \"Tali\",\r\n    \"lastName\": \"Perla\",\r\n    \"memberId\": \"654384222\",\r\n    \"phone\": \"036164096\",\r\n    \"cellPhone\": \"0533162293\",\r\n    \"positiveResultDate\": \"2022-02-16\",\r\n    \"recoveryDate\": \"2022-02-26\"\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:5001/Members",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"Members"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Mar 2024 22:56:44 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"memberNames\": [],\n        \"errorMessage\": \"Address should contain city, street, and number separated by commas.\"\n    }\n]"
+						},
+						{
+							"name": "/Members-FutureBirthDate-Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"address\": \"Daniel, 20, Bnei Brack\",\r\n    \"birthDate\": \"2024-03-28\",\r\n    \"firstName\": \"Tali\",\r\n    \"lastName\": \"Perla\",\r\n    \"memberId\": \"654384222\",\r\n    \"phone\": \"036164096\",\r\n    \"cellPhone\": \"0533162293\",\r\n    \"positiveResultDate\": \"2022-02-16\",\r\n    \"recoveryDate\": \"2022-02-26\"\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:5001/Members",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"Members"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Mar 2024 22:59:41 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"memberNames\": [],\n        \"errorMessage\": \"Birth date cannot be in the future.\"\n    }\n]"
+						},
+						{
+							"name": "/Members-InvalidPhone-Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"address\": \"Daniel, 20, Bnei Brack\",\r\n    \"birthDate\": \"2003-07-17\",\r\n    \"firstName\": \"Tali\",\r\n    \"lastName\": \"Perla\",\r\n    \"memberId\": \"435627483\",\r\n    \"phone\": \"ASD\",\r\n    \"positiveResultDate\": \"2022-02-16\",\r\n    \"recoveryDate\": \"2022-02-26\"\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:5001/Members",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"Members"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/problem+json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Mar 2024 23:04:47 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"type\": \"https://tools.ietf.org/html/rfc7231#section-6.5.1\",\n    \"title\": \"One or more validation errors occurred.\",\n    \"status\": 400,\n    \"traceId\": \"00-ce8a7be645f17ba8eb0d7c5f98657f63-d71b0c026dbbc58a-00\",\n    \"errors\": {\n        \"Phone\": [\n            \"Invalid phone number\"\n        ]\n    }\n}"
+						},
+						{
+							"name": "/Members-InvalidID-Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"address\": \"Daniel, 20, Bnei Brack\",\r\n    \"birthDate\": \"2003-07-17\",\r\n    \"firstName\": \"Tali\",\r\n    \"lastName\": \"Perla\",\r\n    \"memberId\": \"456\",\r\n    \"cellPhone\": \"0533162293\",\r\n    \"positiveResultDate\": \"2022-02-16\",\r\n    \"recoveryDate\": \"2022-02-26\"\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:5001/Members",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"Members"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/problem+json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Mar 2024 23:07:05 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"type\": \"https://tools.ietf.org/html/rfc7231#section-6.5.1\",\n    \"title\": \"One or more validation errors occurred.\",\n    \"status\": 400,\n    \"traceId\": \"00-546a3f8fd94da16317513e73acb69b42-9df38b27c80c3cde-00\",\n    \"errors\": {\n        \"MemberId\": [\n            \"Member Id must contain exactly 9 digits.\"\n        ]\n    }\n}"
+						},
+						{
+							"name": "/Members-WithoutPhone-Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"address\": \"Daniel, 20, Bnei Brack\",\r\n    \"birthDate\": \"2003-07-17\",\r\n    \"firstName\": \"Tali\",\r\n    \"lastName\": \"Perla\",\r\n    \"memberId\": \"654384222\",\r\n    \"positiveResultDate\": \"2022-02-16\",\r\n    \"recoveryDate\": \"2022-02-26\"\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:5001/Members",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"Members"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Mar 2024 23:08:13 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"memberNames\": [],\n        \"errorMessage\": \"Please fill in at least one phone number.\"\n    }\n]"
+						},
+						{
+							"name": "/Members-OnlyOnePhone-Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"address\": \"Daniel, 20, Bnei Brack\",\r\n    \"birthDate\": \"2003-07-17\",\r\n    \"firstName\": \"Tali\",\r\n    \"lastName\": \"Perla\",\r\n    \"memberId\": \"444333565\",\r\n    \"cellPhone\": \"0533162293\",\r\n    \"positiveResultDate\": \"2022-02-16\",\r\n    \"recoveryDate\": \"2022-02-26\"\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:5001/Members",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"Members"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Mar 2024 23:09:19 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Location",
+									"value": "http://localhost:5001/Members/444333565"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"memberId\": \"444333565\",\n    \"firstName\": \"Tali\",\n    \"lastName\": \"Perla\",\n    \"address\": \"Daniel, 20, Bnei Brack\",\n    \"birthDate\": \"2003-07-17T00:00:00\",\n    \"phone\": null,\n    \"cellPhone\": \"0533162293\",\n    \"positiveResultDate\": \"2022-02-16T00:00:00\",\n    \"recoveryDate\": \"2022-02-26T00:00:00\",\n    \"vaccinations\": null\n}"
+						},
+						{
+							"name": "/Members-FuturePositiveResultDate-Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"address\": \"Daniel, 20, Bnei Brack\",\r\n    \"birthDate\": \"2003-07-17\",\r\n    \"firstName\": \"Tali\",\r\n    \"lastName\": \"Perla\",\r\n    \"memberId\": \"654384222\",\r\n    \"phone\": \"036164096\",\r\n    \"cellPhone\": \"0533162293\",\r\n    \"positiveResultDate\": \"2024-04-16\",\r\n    \"recoveryDate\": \"2022-02-26\"\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:5001/Members",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"Members"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Mar 2024 23:12:36 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"memberNames\": [],\n        \"errorMessage\": \"Positive result date cannot be in the future.\"\n    },\n    {\n        \"memberNames\": [],\n        \"errorMessage\": \"Invalid recovery date.\"\n    }\n]"
+						},
+						{
+							"name": "/Members-RecoveryWithoutPositiveDate-Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"address\": \"Daniel, 20, Bnei Brack\",\r\n    \"birthDate\": \"2003-07-17\",\r\n    \"firstName\": \"Tali\",\r\n    \"lastName\": \"Perla\",\r\n    \"memberId\": \"654384222\",\r\n    \"phone\": \"036164096\",\r\n    \"cellPhone\": \"0533162293\",\r\n    \"recoveryDate\": \"2022-02-26\"\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:5001/Members",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"Members"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Mar 2024 23:13:58 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"memberNames\": [],\n        \"errorMessage\": \"If recovery date is provided, positive result date must also be provided.\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "/Members",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/plain"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/Members",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Members"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/Members-Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/Members",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Members"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Mar 2024 23:27:38 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"memberId\": \"324\",\n        \"firstName\": \"a\",\n        \"lastName\": \"a\",\n        \"address\": \"a\",\n        \"birthDate\": \"2024-03-28T00:00:00\",\n        \"phone\": \"0533162293\",\n        \"cellPhone\": \"036164096\",\n        \"positiveResultDate\": null,\n        \"recoveryDate\": null,\n        \"vaccinations\": [\n            {\n                \"vaccinationId\": 4,\n                \"memberId\": \"324\",\n                \"manufacturerId\": 1,\n                \"vaccinationDate\": \"2024-03-26T00:00:00\"\n            },\n            {\n                \"vaccinationId\": 5,\n                \"memberId\": \"324\",\n                \"manufacturerId\": 1,\n                \"vaccinationDate\": \"2024-03-26T00:00:00\"\n            }\n        ]\n    },\n    {\n        \"memberId\": \"325\",\n        \"firstName\": \"a\",\n        \"lastName\": \"a\",\n        \"address\": \"a\",\n        \"birthDate\": \"2024-03-28T00:00:00\",\n        \"phone\": \"0533162293\",\n        \"cellPhone\": \"036164096\",\n        \"positiveResultDate\": null,\n        \"recoveryDate\": null,\n        \"vaccinations\": []\n    },\n    {\n        \"memberId\": \"325324711\",\n        \"firstName\": \"a\",\n        \"lastName\": \"s\",\n        \"address\": \"daniel 20 bnei brack\",\n        \"birthDate\": \"2003-03-26T00:00:00\",\n        \"phone\": \"0533162256\",\n        \"cellPhone\": \"036164096\",\n        \"positiveResultDate\": null,\n        \"recoveryDate\": null,\n        \"vaccinations\": []\n    },\n    {\n        \"memberId\": \"325324713\",\n        \"firstName\": \"Tali\",\n        \"lastName\": \"Perla\",\n        \"address\": \"Daniel 20 Bnei Brack\",\n        \"birthDate\": \"2003-07-17T00:00:00\",\n        \"phone\": \"0533162293\",\n        \"cellPhone\": \"036164096\",\n        \"positiveResultDate\": null,\n        \"recoveryDate\": null,\n        \"vaccinations\": [\n            {\n                \"vaccinationId\": 1,\n                \"memberId\": \"325324713\",\n                \"manufacturerId\": 1,\n                \"vaccinationDate\": \"2024-03-25T00:00:00\"\n            },\n            {\n                \"vaccinationId\": 6,\n                \"memberId\": \"325324713\",\n                \"manufacturerId\": 1,\n                \"vaccinationDate\": \"2024-03-25T00:00:00\"\n            }\n        ]\n    },\n    {\n        \"memberId\": \"325324716\",\n        \"firstName\": \"a\",\n        \"lastName\": \"v\",\n        \"address\": \"g\",\n        \"birthDate\": \"2024-03-27T00:00:00\",\n        \"phone\": \"0533162299\",\n        \"cellPhone\": \"036164096\",\n        \"positiveResultDate\": null,\n        \"recoveryDate\": null,\n        \"vaccinations\": []\n    },\n    {\n        \"memberId\": \"325325435\",\n        \"firstName\": \"a\",\n        \"lastName\": \"a\",\n        \"address\": \"daniel 20 bnei brack\",\n        \"birthDate\": \"2024-03-28T00:00:00\",\n        \"phone\": \"0544372263\",\n        \"cellPhone\": \"032563489\",\n        \"positiveResultDate\": null,\n        \"recoveryDate\": null,\n        \"vaccinations\": []\n    },\n    {\n        \"memberId\": \"356456378\",\n        \"firstName\": \"g\",\n        \"lastName\": \"h\",\n        \"address\": \"daniel, 20, bnei brack\",\n        \"birthDate\": \"2024-03-22T00:00:00\",\n        \"phone\": \"0544367723\",\n        \"cellPhone\": null,\n        \"positiveResultDate\": null,\n        \"recoveryDate\": null,\n        \"vaccinations\": [\n            {\n                \"vaccinationId\": 8,\n                \"memberId\": \"356456378\",\n                \"manufacturerId\": 2,\n                \"vaccinationDate\": \"2024-03-26T00:00:00\"\n            }\n        ]\n    },\n    {\n        \"memberId\": \"3765\",\n        \"firstName\": \"a\",\n        \"lastName\": \"a\",\n        \"address\": \"a\",\n        \"birthDate\": \"2024-03-28T00:00:00\",\n        \"phone\": \"0533162293\",\n        \"cellPhone\": \"036274489\",\n        \"positiveResultDate\": null,\n        \"recoveryDate\": null,\n        \"vaccinations\": []\n    },\n    {\n        \"memberId\": \"435425376\",\n        \"firstName\": \"Tali\",\n        \"lastName\": \"Perla\",\n        \"address\": \"Daniel, 20, Bnei Brack\",\n        \"birthDate\": \"2003-07-17T00:00:00\",\n        \"phone\": \"036164096\",\n        \"cellPhone\": \"0533162293\",\n        \"positiveResultDate\": \"2022-02-16T00:00:00\",\n        \"recoveryDate\": \"2022-02-26T00:00:00\",\n        \"vaccinations\": []\n    },\n    {\n        \"memberId\": \"435678555\",\n        \"firstName\": \"Tali\",\n        \"lastName\": \"Perla\",\n        \"address\": \"Daniel, 20, Bnei Brack\",\n        \"birthDate\": \"2003-07-17T00:00:00\",\n        \"phone\": \"036164096\",\n        \"cellPhone\": \"0533162293\",\n        \"positiveResultDate\": \"2022-02-16T00:00:00\",\n        \"recoveryDate\": \"2022-02-26T00:00:00\",\n        \"vaccinations\": []\n    },\n    {\n        \"memberId\": \"444333565\",\n        \"firstName\": \"Tali\",\n        \"lastName\": \"Perla\",\n        \"address\": \"Daniel, 20, Bnei Brack\",\n        \"birthDate\": \"2003-07-17T00:00:00\",\n        \"phone\": null,\n        \"cellPhone\": \"0533162293\",\n        \"positiveResultDate\": \"2022-02-16T00:00:00\",\n        \"recoveryDate\": \"2022-02-26T00:00:00\",\n        \"vaccinations\": []\n    },\n    {\n        \"memberId\": \"456475634\",\n        \"firstName\": \"s\",\n        \"lastName\": \"s\",\n        \"address\": \"daniel, 20, bnei brack\",\n        \"birthDate\": \"2005-03-26T00:00:00\",\n        \"phone\": \"0533142253\",\n        \"cellPhone\": null,\n        \"positiveResultDate\": null,\n        \"recoveryDate\": null,\n        \"vaccinations\": [\n            {\n                \"vaccinationId\": 7,\n                \"memberId\": \"456475634\",\n                \"manufacturerId\": 2,\n                \"vaccinationDate\": \"2024-03-26T00:00:00\"\n            }\n        ]\n    },\n    {\n        \"memberId\": \"456868458\",\n        \"firstName\": \"Tali\",\n        \"lastName\": \"Perla\",\n        \"address\": \"Daniel, 20, Bnei Brack\",\n        \"birthDate\": \"2003-07-17T00:00:00\",\n        \"phone\": \"036164096\",\n        \"cellPhone\": \"0533162293\",\n        \"positiveResultDate\": \"2022-02-16T00:00:00\",\n        \"recoveryDate\": \"2022-02-26T00:00:00\",\n        \"vaccinations\": []\n    },\n    {\n        \"memberId\": \"546354623\",\n        \"firstName\": \"Tali\",\n        \"lastName\": \"Perla\",\n        \"address\": \"Daniel, 20, Bnei Brack\",\n        \"birthDate\": \"2003-07-17T00:00:00\",\n        \"phone\": \"036164096\",\n        \"cellPhone\": null,\n        \"positiveResultDate\": \"2022-02-16T00:00:00\",\n        \"recoveryDate\": \"2022-02-26T00:00:00\",\n        \"vaccinations\": []\n    },\n    {\n        \"memberId\": \"653784909\",\n        \"firstName\": \"Tali\",\n        \"lastName\": \"Perla\",\n        \"address\": \"Daniel, 20, Bnei Brack\",\n        \"birthDate\": \"2003-07-17T00:00:00\",\n        \"phone\": \"036164096\",\n        \"cellPhone\": \"0533162293\",\n        \"positiveResultDate\": \"2022-02-16T00:00:00\",\n        \"recoveryDate\": \"2022-02-26T00:00:00\",\n        \"vaccinations\": []\n    },\n    {\n        \"memberId\": \"654384222\",\n        \"firstName\": \"Tali\",\n        \"lastName\": \"Perla\",\n        \"address\": \"Daniel, 20, Bnei Brack\",\n        \"birthDate\": \"2003-07-17T00:00:00\",\n        \"phone\": \"036164096\",\n        \"cellPhone\": \"0533162293\",\n        \"positiveResultDate\": \"2022-02-16T00:00:00\",\n        \"recoveryDate\": \"2022-02-26T00:00:00\",\n        \"vaccinations\": []\n    },\n    {\n        \"memberId\": \"654738444\",\n        \"firstName\": \"Tali\",\n        \"lastName\": \"Perla\",\n        \"address\": \"Daniel, 20, Bnei Brack\",\n        \"birthDate\": \"2003-07-17T00:00:00\",\n        \"phone\": \"036164096\",\n        \"cellPhone\": \"0533162293\",\n        \"positiveResultDate\": \"2022-02-16T00:00:00\",\n        \"recoveryDate\": \"2022-02-26T00:00:00\",\n        \"vaccinations\": []\n    },\n    {\n        \"memberId\": \"674283444\",\n        \"firstName\": \"Tali\",\n        \"lastName\": \"Perla\",\n        \"address\": \"Daniel, 20, Bnei Brack\",\n        \"birthDate\": \"2003-07-17T00:00:00\",\n        \"phone\": \"036164096\",\n        \"cellPhone\": \"0533162293\",\n        \"positiveResultDate\": \"2022-02-16T00:00:00\",\n        \"recoveryDate\": \"2022-02-26T00:00:00\",\n        \"vaccinations\": []\n    },\n    {\n        \"memberId\": \"674839645\",\n        \"firstName\": \"Tali\",\n        \"lastName\": \"Perla\",\n        \"address\": \"Daniel, 20, Bnei Brack\",\n        \"birthDate\": \"2003-07-17T00:00:00\",\n        \"phone\": \"6\",\n        \"cellPhone\": null,\n        \"positiveResultDate\": \"2022-02-16T00:00:00\",\n        \"recoveryDate\": \"2022-02-26T00:00:00\",\n        \"vaccinations\": []\n    },\n    {\n        \"memberId\": \"684725694576\",\n        \"firstName\": \"Tali\",\n        \"lastName\": \"Perla\",\n        \"address\": \"Daniel, 20, Bnei Brack\",\n        \"birthDate\": \"2003-07-17T00:00:00\",\n        \"phone\": \"036164096\",\n        \"cellPhone\": \"0533162293\",\n        \"positiveResultDate\": \"2022-02-16T00:00:00\",\n        \"recoveryDate\": \"2022-02-26T00:00:00\",\n        \"vaccinations\": []\n    },\n    {\n        \"memberId\": \"76543\",\n        \"firstName\": \"Tali\",\n        \"lastName\": \"Perla\",\n        \"address\": \"Daniel, 20, Bnei Brack\",\n        \"birthDate\": \"2003-07-17T00:00:00\",\n        \"phone\": \"036164096\",\n        \"cellPhone\": \"0533162293\",\n        \"positiveResultDate\": \"2022-02-16T00:00:00\",\n        \"recoveryDate\": \"2022-02-26T00:00:00\",\n        \"vaccinations\": []\n    },\n    {\n        \"memberId\": \"87608\",\n        \"firstName\": \"f\",\n        \"lastName\": \"f\",\n        \"address\": \"daniel\",\n        \"birthDate\": \"2024-03-22T00:00:00\",\n        \"phone\": \"0533162293\",\n        \"cellPhone\": \"035263846\",\n        \"positiveResultDate\": null,\n        \"recoveryDate\": null,\n        \"vaccinations\": []\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:5001/Members",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"address\": \"Daniel, 20, Bnei Brack\",\r\n    \"birthDate\": \"2003-07-17\",\r\n    \"firstName\": \"Tali\",\r\n    \"lastName\": \"Perla\",\r\n    \"memberId\": \"674283444\",\r\n    \"phone\": \"036164096\",\r\n    \"cellPhone\": \"0533162293\",\r\n    \"positiveResultDate\": \"2022-02-16\",\r\n    \"recoveryDate\": \"2022-02-26\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5001/Members",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"Members"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:5001/Members",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "multipart/form-data",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5001/Members",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"Members"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:5001/Members/CreateMember",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"address\": \"Daniel, 20, Bnei Brack\",\r\n    \"birthDate\": \"2003-07-17\",\r\n    \"firstName\": \"Tali\",\r\n    \"lastName\": \"Perla\",\r\n    \"memberId\": \"654384222\",\r\n    \"phone\": \"036164096\",\r\n    \"cellPhone\": \"0533162293\",\r\n    \"positiveResultDate\": \"2022-02-16\",\r\n    \"recoveryDate\": \"2022-02-26\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5001/Members/CreateMember",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"Members",
+								"CreateMember"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vaccinations",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "/Vaccinations/:id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/Vaccinations/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Vaccinations",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "<integer>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/Vaccinations/:id-Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/Vaccinations/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"Vaccinations",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 26 Mar 2024 23:47:56 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"vaccinationId\": 1,\n    \"memberId\": \"325324713\",\n    \"manufacturerId\": 1,\n    \"vaccinationDate\": \"2024-03-25T00:00:00\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "/Vaccinations",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "text/plain"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"manufacturerId\": \"<integer>\",\n  \"memberId\": \"<string>\",\n  \"vaccinationDate\": \"<date>\",\n  \"vaccinationId\": \"<integer>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/Vaccinations",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Vaccinations"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/Vaccinations-Full-Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"manufacturerId\": \"3\",\n  \"memberId\": \"325324713\",\n  \"vaccinationDate\": \"2024-02-01\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/Vaccinations",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Vaccinations"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Mar 2024 23:41:07 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Location",
+									"value": "http://localhost:5001/Vaccinations/9"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"vaccinationId\": 9,\n    \"memberId\": \"325324713\",\n    \"manufacturerId\": 3,\n    \"vaccinationDate\": \"2024-02-01T00:00:00\"\n}"
+						},
+						{
+							"name": "/Vaccinations-WithoutMemberID-Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"manufacturerId\": \"3\",\n  \"vaccinationDate\": \"2024-02-01\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/Vaccinations",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Vaccinations"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/problem+json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Mar 2024 23:42:10 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"type\": \"https://tools.ietf.org/html/rfc7231#section-6.5.1\",\n    \"title\": \"One or more validation errors occurred.\",\n    \"status\": 400,\n    \"traceId\": \"00-5b0a842db325fdd420006bebba0de457-2728e7d52e47c7c2-00\",\n    \"errors\": {\n        \"MemberId\": [\n            \"Member ID is required\"\n        ]\n    }\n}"
+						},
+						{
+							"name": "/Vaccinations-InValidManufacturerID-Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"manufacturerId\": \"67\",\n  \"memberId\": \"325324713\",\n  \"vaccinationDate\": \"2024-02-01\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/Vaccinations",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Vaccinations"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Mar 2024 23:43:33 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "\"Error: Could not save changes. Please configure your entity type accordingly.\""
+						},
+						{
+							"name": "/Vaccinations-FutureVaccinationDate-Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"manufacturerId\": \"67\",\n  \"memberId\": \"325324713\",\n  \"vaccinationDate\": \"2024-05-01\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/Vaccinations",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Vaccinations"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/problem+json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Mar 2024 23:45:20 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"type\": \"https://tools.ietf.org/html/rfc7231#section-6.5.1\",\n    \"title\": \"One or more validation errors occurred.\",\n    \"status\": 400,\n    \"traceId\": \"00-3dad6a7cf2cd3c92c54ab04a575e44ae-d6159362c69d6e8f-00\",\n    \"errors\": {\n        \"VaccinationDate\": [\n            \"Vaccination date must be in the past\"\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "/Vaccinations",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/plain"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/Vaccinations",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Vaccinations"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/Vaccinations-Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/Vaccinations",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Vaccinations"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Mar 2024 23:46:36 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"vaccinationId\": 1,\n        \"memberId\": \"325324713\",\n        \"manufacturerId\": 1,\n        \"vaccinationDate\": \"2024-03-25T00:00:00\"\n    },\n    {\n        \"vaccinationId\": 4,\n        \"memberId\": \"324\",\n        \"manufacturerId\": 1,\n        \"vaccinationDate\": \"2024-03-26T00:00:00\"\n    },\n    {\n        \"vaccinationId\": 5,\n        \"memberId\": \"324\",\n        \"manufacturerId\": 1,\n        \"vaccinationDate\": \"2024-03-26T00:00:00\"\n    },\n    {\n        \"vaccinationId\": 6,\n        \"memberId\": \"325324713\",\n        \"manufacturerId\": 1,\n        \"vaccinationDate\": \"2024-03-25T00:00:00\"\n    },\n    {\n        \"vaccinationId\": 7,\n        \"memberId\": \"456475634\",\n        \"manufacturerId\": 2,\n        \"vaccinationDate\": \"2024-03-26T00:00:00\"\n    },\n    {\n        \"vaccinationId\": 8,\n        \"memberId\": \"356456378\",\n        \"manufacturerId\": 2,\n        \"vaccinationDate\": \"2024-03-26T00:00:00\"\n    },\n    {\n        \"vaccinationId\": 9,\n        \"memberId\": \"325324713\",\n        \"manufacturerId\": 3,\n        \"vaccinationDate\": \"2024-02-01T00:00:00\"\n    }\n]"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:5001"
+		}
+	]
+}

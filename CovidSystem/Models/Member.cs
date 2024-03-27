@@ -1,11 +1,16 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 #pragma warning disable CS8618
+// This class represents a Member entity in the system.
 public class Member
 {
+    // Primary key for the Member entity, consisting of exactly 9 digits.
     [Key]
-    public int MemberId { get; set; }
+    [RegularExpression(@"^\d{9}$", ErrorMessage = "Member Id must contain exactly 9 digits.")]
+    [Required(ErrorMessage = "Member Id is required")]
+    public string MemberId { get; set; }
 
     [Required(ErrorMessage = "First name is required")]
     [MaxLength(50)]
@@ -23,19 +28,23 @@ public class Member
     [DataType(DataType.Date)]
     public DateTime BirthDate { get; set; }
 
-    [Required(ErrorMessage = "Phone is required")]
     [Phone(ErrorMessage = "Invalid phone number")]
-    public string Phone { get; set; }
+    public string? Phone { get; set; } = null;
 
     [Phone(ErrorMessage = "Invalid cell phone number")]
-    public string CellPhone { get; set; }
+    public string? CellPhone { get; set; } = null;
 
-    [Required(ErrorMessage = "Positive result date is required")]
     [DataType(DataType.Date)]
-    public DateTime PositiveResultDate { get; set; }
+    public DateTime? PositiveResultDate { get; set; } = null;
 
-    [Required(ErrorMessage = "Recovery date is required")]
     [DataType(DataType.Date)]
-    public DateTime RecoveryDate { get; set; }
+    public DateTime? RecoveryDate { get; set; } = null;
+
+    // Hash of the member's image (not serialized).
+    [JsonIgnore]
+    public string? ImageHash { get; set; } = null;
+
+    // Navigation property for vaccinations
+    public ICollection<Vaccination>? Vaccinations { get; set; } = null;
 }
 #pragma warning restore CS8618

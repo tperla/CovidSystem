@@ -10,10 +10,12 @@ using System.Threading.Tasks;
 public class ManufacturersController : ControllerBase
 {
     private readonly CovidDbContext _context;
+    // Constructor to inject the CovidDbContext into the controller
     public ManufacturersController(CovidDbContext context)
     {
         _context = context;
     }
+    // POST endpoint to create a new manufacturer
     [HttpPost]
     public async Task<ActionResult<Manufacturer>> CreateManufacturer(Manufacturer manufacturer)
     {
@@ -33,6 +35,7 @@ public class ManufacturersController : ControllerBase
             return StatusCode(500, $"Error: {ex.Message}");
         }
     }
+    // GET endpoint to retrieve a manufacturer by its ID
     [HttpGet("{id}")]
     public async Task<ActionResult<Manufacturer>> GetManufacturer(int id)
     {
@@ -42,16 +45,17 @@ public class ManufacturersController : ControllerBase
 
             if (manufacturer == null)
             {
-                return NotFound(); 
+                return NotFound();
             }
 
-            return Ok(manufacturer); 
+            return Ok(manufacturer);
         }
         catch (Exception ex)
         {
             return StatusCode(500, $"Error: {ex.Message}");
         }
     }
+    // GET endpoint to retrieve all manufacturers
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Manufacturer>>> GetManufacturers()
     {

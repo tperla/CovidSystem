@@ -14,9 +14,9 @@
 3. You can debug the api through vs by pressing f5 and see the api in swagger.
 4. To enable different types of tests, download the CovidSystems file found in the Postman_Tests folder and import it in Postman.
 5. First details should be entered into the DB in the following order:
-  1. Manufacturers
-  2. Member
-  3. Vaccinations
+    1. Manufacturers
+    2. Member
+    3. Vaccinations
 After that you can run the tests.
 6. In addition I added the ability to upload an image, the image is saved in the DB as base64 to save space.
 7. The charts are in the Design folder.

@@ -218,7 +218,7 @@
 											"variable": [
 												{
 													"key": "id",
-													"value": "3",
+													"value": "1",
 													"description": "(Required) "
 												}
 											]
@@ -686,15 +686,13 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"address\": \"Daniel, 20, Bnei Brack\",\r\n    \"birthDate\": \"2003-07-17\",\r\n    \"firstName\": \"Tali\",\r\n    \"lastName\": \"Perla\",\r\n    \"memberId\": \"654384222\",\r\n    \"phone\": \"036164096\",\r\n    \"cellPhone\": \"0533162293\",\r\n    \"positiveResultDate\": \"2022-02-16\",\r\n    \"recoveryDate\": \"2022-02-26\"\r\n}"
+									"raw": "{\r\n    \"address\": \"Daniel, 20, Bnei Brack\",\r\n    \"birthDate\": \"2003-07-17\",\r\n    \"firstName\": \"Tali\",\r\n    \"lastName\": \"Perla\",\r\n    \"memberId\": \"325324713\",\r\n    \"phone\": \"036164096\",\r\n    \"cellPhone\": \"0533162293\",\r\n    \"positiveResultDate\": \"2022-02-16\",\r\n    \"recoveryDate\": \"2022-02-26\"\r\n}"
 								},
 								"url": {
-									"raw": "http://localhost:5001/Members/CreateMember",
-									"protocol": "http",
+									"raw": "{{baseUrl}}/Members/CreateMember",
 									"host": [
-										"localhost"
+										"{{baseUrl}}"
 									],
-									"port": "5001",
 									"path": [
 										"Members",
 										"CreateMember"
@@ -748,14 +746,13 @@
 									"raw": "{\r\n    \"address\": \"Daniel, 20, Bnei Brack\",\r\n    \"birthDate\": \"2003-07-17\",\r\n    \"lastName\": \"Perla\",\r\n    \"memberId\": \"654384222\",\r\n    \"phone\": \"036164096\",\r\n    \"cellPhone\": \"0533162293\",\r\n    \"positiveResultDate\": \"2022-02-16\",\r\n    \"recoveryDate\": \"2022-02-26\"\r\n}"
 								},
 								"url": {
-									"raw": "http://localhost:5001/Members",
-									"protocol": "http",
+									"raw": "{{baseUrl}}/Members/CreateMember",
 									"host": [
-										"localhost"
+										"{{baseUrl}}"
 									],
-									"port": "5001",
 									"path": [
-										"Members"
+										"Members",
+										"CreateMember"
 									]
 								}
 							},
@@ -802,14 +799,13 @@
 									"raw": "{\r\n    \"address\": \"Daniel\",\r\n    \"birthDate\": \"2003-07-17\",\r\n    \"firstName\": \"Tali\",\r\n    \"lastName\": \"Perla\",\r\n    \"memberId\": \"654384222\",\r\n    \"phone\": \"036164096\",\r\n    \"cellPhone\": \"0533162293\",\r\n    \"positiveResultDate\": \"2022-02-16\",\r\n    \"recoveryDate\": \"2022-02-26\"\r\n}"
 								},
 								"url": {
-									"raw": "http://localhost:5001/Members",
-									"protocol": "http",
+									"raw": "{{baseUrl}}/Members/CreateMember",
 									"host": [
-										"localhost"
+										"{{baseUrl}}"
 									],
-									"port": "5001",
 									"path": [
-										"Members"
+										"Members",
+										"CreateMember"
 									]
 								}
 							},
@@ -853,17 +849,16 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"address\": \"Daniel, 20, Bnei Brack\",\r\n    \"birthDate\": \"2024-03-28\",\r\n    \"firstName\": \"Tali\",\r\n    \"lastName\": \"Perla\",\r\n    \"memberId\": \"654384222\",\r\n    \"phone\": \"036164096\",\r\n    \"cellPhone\": \"0533162293\",\r\n    \"positiveResultDate\": \"2022-02-16\",\r\n    \"recoveryDate\": \"2022-02-26\"\r\n}"
+									"raw": "{\r\n    \"address\": \"Daniel, 20, Bnei Brack\",\r\n    \"birthDate\": \"2024-05-28\",\r\n    \"firstName\": \"Tali\",\r\n    \"lastName\": \"Perla\",\r\n    \"memberId\": \"654384222\",\r\n    \"phone\": \"036164096\",\r\n    \"cellPhone\": \"0533162293\",\r\n    \"positiveResultDate\": \"2022-02-16\",\r\n    \"recoveryDate\": \"2022-02-26\"\r\n}"
 								},
 								"url": {
-									"raw": "http://localhost:5001/Members",
-									"protocol": "http",
+									"raw": "{{baseUrl}}/Members/CreateMember",
 									"host": [
-										"localhost"
+										"{{baseUrl}}"
 									],
-									"port": "5001",
 									"path": [
-										"Members"
+										"Members",
+										"CreateMember"
 									]
 								}
 							},
@@ -910,14 +905,13 @@
 									"raw": "{\r\n    \"address\": \"Daniel, 20, Bnei Brack\",\r\n    \"birthDate\": \"2003-07-17\",\r\n    \"firstName\": \"Tali\",\r\n    \"lastName\": \"Perla\",\r\n    \"memberId\": \"435627483\",\r\n    \"phone\": \"ASD\",\r\n    \"positiveResultDate\": \"2022-02-16\",\r\n    \"recoveryDate\": \"2022-02-26\"\r\n}"
 								},
 								"url": {
-									"raw": "http://localhost:5001/Members",
-									"protocol": "http",
+									"raw": "{{baseUrl}}/Members/CreateMember",
 									"host": [
-										"localhost"
+										"{{baseUrl}}"
 									],
-									"port": "5001",
 									"path": [
-										"Members"
+										"Members",
+										"CreateMember"
 									]
 								}
 							},
@@ -964,14 +958,13 @@
 									"raw": "{\r\n    \"address\": \"Daniel, 20, Bnei Brack\",\r\n    \"birthDate\": \"2003-07-17\",\r\n    \"firstName\": \"Tali\",\r\n    \"lastName\": \"Perla\",\r\n    \"memberId\": \"456\",\r\n    \"cellPhone\": \"0533162293\",\r\n    \"positiveResultDate\": \"2022-02-16\",\r\n    \"recoveryDate\": \"2022-02-26\"\r\n}"
 								},
 								"url": {
-									"raw": "http://localhost:5001/Members",
-									"protocol": "http",
+									"raw": "{{baseUrl}}/Members/CreateMember",
 									"host": [
-										"localhost"
+										"{{baseUrl}}"
 									],
-									"port": "5001",
 									"path": [
-										"Members"
+										"Members",
+										"CreateMember"
 									]
 								}
 							},
@@ -1018,14 +1011,13 @@
 									"raw": "{\r\n    \"address\": \"Daniel, 20, Bnei Brack\",\r\n    \"birthDate\": \"2003-07-17\",\r\n    \"firstName\": \"Tali\",\r\n    \"lastName\": \"Perla\",\r\n    \"memberId\": \"654384222\",\r\n    \"positiveResultDate\": \"2022-02-16\",\r\n    \"recoveryDate\": \"2022-02-26\"\r\n}"
 								},
 								"url": {
-									"raw": "http://localhost:5001/Members",
-									"protocol": "http",
+									"raw": "{{baseUrl}}/Members/CreateMember",
 									"host": [
-										"localhost"
+										"{{baseUrl}}"
 									],
-									"port": "5001",
 									"path": [
-										"Members"
+										"Members",
+										"CreateMember"
 									]
 								}
 							},
@@ -1072,14 +1064,13 @@
 									"raw": "{\r\n    \"address\": \"Daniel, 20, Bnei Brack\",\r\n    \"birthDate\": \"2003-07-17\",\r\n    \"firstName\": \"Tali\",\r\n    \"lastName\": \"Perla\",\r\n    \"memberId\": \"444333565\",\r\n    \"cellPhone\": \"0533162293\",\r\n    \"positiveResultDate\": \"2022-02-16\",\r\n    \"recoveryDate\": \"2022-02-26\"\r\n}"
 								},
 								"url": {
-									"raw": "http://localhost:5001/Members",
-									"protocol": "http",
+									"raw": "{{baseUrl}}/Members/CreateMember",
 									"host": [
-										"localhost"
+										"{{baseUrl}}"
 									],
-									"port": "5001",
 									"path": [
-										"Members"
+										"Members",
+										"CreateMember"
 									]
 								}
 							},
@@ -1130,14 +1121,13 @@
 									"raw": "{\r\n    \"address\": \"Daniel, 20, Bnei Brack\",\r\n    \"birthDate\": \"2003-07-17\",\r\n    \"firstName\": \"Tali\",\r\n    \"lastName\": \"Perla\",\r\n    \"memberId\": \"654384222\",\r\n    \"phone\": \"036164096\",\r\n    \"cellPhone\": \"0533162293\",\r\n    \"positiveResultDate\": \"2024-04-16\",\r\n    \"recoveryDate\": \"2022-02-26\"\r\n}"
 								},
 								"url": {
-									"raw": "http://localhost:5001/Members",
-									"protocol": "http",
+									"raw": "{{baseUrl}}/Members/CreateMember",
 									"host": [
-										"localhost"
+										"{{baseUrl}}"
 									],
-									"port": "5001",
 									"path": [
-										"Members"
+										"Members",
+										"CreateMember"
 									]
 								}
 							},
@@ -1184,14 +1174,13 @@
 									"raw": "{\r\n    \"address\": \"Daniel, 20, Bnei Brack\",\r\n    \"birthDate\": \"2003-07-17\",\r\n    \"firstName\": \"Tali\",\r\n    \"lastName\": \"Perla\",\r\n    \"memberId\": \"654384222\",\r\n    \"phone\": \"036164096\",\r\n    \"cellPhone\": \"0533162293\",\r\n    \"recoveryDate\": \"2022-02-26\"\r\n}"
 								},
 								"url": {
-									"raw": "http://localhost:5001/Members",
-									"protocol": "http",
+									"raw": "{{baseUrl}}/Members/CreateMember",
 									"host": [
-										"localhost"
+										"{{baseUrl}}"
 									],
-									"port": "5001",
 									"path": [
-										"Members"
+										"Members",
+										"CreateMember"
 									]
 								}
 							},
@@ -1287,107 +1276,6 @@
 							"body": "[\n    {\n        \"memberId\": \"324\",\n        \"firstName\": \"a\",\n        \"lastName\": \"a\",\n        \"address\": \"a\",\n        \"birthDate\": \"2024-03-28T00:00:00\",\n        \"phone\": \"0533162293\",\n        \"cellPhone\": \"036164096\",\n        \"positiveResultDate\": null,\n        \"recoveryDate\": null,\n        \"vaccinations\": [\n            {\n                \"vaccinationId\": 4,\n                \"memberId\": \"324\",\n                \"manufacturerId\": 1,\n                \"vaccinationDate\": \"2024-03-26T00:00:00\"\n            },\n            {\n                \"vaccinationId\": 5,\n                \"memberId\": \"324\",\n                \"manufacturerId\": 1,\n                \"vaccinationDate\": \"2024-03-26T00:00:00\"\n            }\n        ]\n    },\n    {\n        \"memberId\": \"325\",\n        \"firstName\": \"a\",\n        \"lastName\": \"a\",\n        \"address\": \"a\",\n        \"birthDate\": \"2024-03-28T00:00:00\",\n        \"phone\": \"0533162293\",\n        \"cellPhone\": \"036164096\",\n        \"positiveResultDate\": null,\n        \"recoveryDate\": null,\n        \"vaccinations\": []\n    },\n    {\n        \"memberId\": \"325324711\",\n        \"firstName\": \"a\",\n        \"lastName\": \"s\",\n        \"address\": \"daniel 20 bnei brack\",\n        \"birthDate\": \"2003-03-26T00:00:00\",\n        \"phone\": \"0533162256\",\n        \"cellPhone\": \"036164096\",\n        \"positiveResultDate\": null,\n        \"recoveryDate\": null,\n        \"vaccinations\": []\n    },\n    {\n        \"memberId\": \"325324713\",\n        \"firstName\": \"Tali\",\n        \"lastName\": \"Perla\",\n        \"address\": \"Daniel 20 Bnei Brack\",\n        \"birthDate\": \"2003-07-17T00:00:00\",\n        \"phone\": \"0533162293\",\n        \"cellPhone\": \"036164096\",\n        \"positiveResultDate\": null,\n        \"recoveryDate\": null,\n        \"vaccinations\": [\n            {\n                \"vaccinationId\": 1,\n                \"memberId\": \"325324713\",\n                \"manufacturerId\": 1,\n                \"vaccinationDate\": \"2024-03-25T00:00:00\"\n            },\n            {\n                \"vaccinationId\": 6,\n                \"memberId\": \"325324713\",\n                \"manufacturerId\": 1,\n                \"vaccinationDate\": \"2024-03-25T00:00:00\"\n            }\n        ]\n    },\n    {\n        \"memberId\": \"325324716\",\n        \"firstName\": \"a\",\n        \"lastName\": \"v\",\n        \"address\": \"g\",\n        \"birthDate\": \"2024-03-27T00:00:00\",\n        \"phone\": \"0533162299\",\n        \"cellPhone\": \"036164096\",\n        \"positiveResultDate\": null,\n        \"recoveryDate\": null,\n        \"vaccinations\": []\n    },\n    {\n        \"memberId\": \"325325435\",\n        \"firstName\": \"a\",\n        \"lastName\": \"a\",\n        \"address\": \"daniel 20 bnei brack\",\n        \"birthDate\": \"2024-03-28T00:00:00\",\n        \"phone\": \"0544372263\",\n        \"cellPhone\": \"032563489\",\n        \"positiveResultDate\": null,\n        \"recoveryDate\": null,\n        \"vaccinations\": []\n    },\n    {\n        \"memberId\": \"356456378\",\n        \"firstName\": \"g\",\n        \"lastName\": \"h\",\n        \"address\": \"daniel, 20, bnei brack\",\n        \"birthDate\": \"2024-03-22T00:00:00\",\n        \"phone\": \"0544367723\",\n        \"cellPhone\": null,\n        \"positiveResultDate\": null,\n        \"recoveryDate\": null,\n        \"vaccinations\": [\n            {\n                \"vaccinationId\": 8,\n                \"memberId\": \"356456378\",\n                \"manufacturerId\": 2,\n                \"vaccinationDate\": \"2024-03-26T00:00:00\"\n            }\n        ]\n    },\n    {\n        \"memberId\": \"3765\",\n        \"firstName\": \"a\",\n        \"lastName\": \"a\",\n        \"address\": \"a\",\n        \"birthDate\": \"2024-03-28T00:00:00\",\n        \"phone\": \"0533162293\",\n        \"cellPhone\": \"036274489\",\n        \"positiveResultDate\": null,\n        \"recoveryDate\": null,\n        \"vaccinations\": []\n    },\n    {\n        \"memberId\": \"435425376\",\n        \"firstName\": \"Tali\",\n        \"lastName\": \"Perla\",\n        \"address\": \"Daniel, 20, Bnei Brack\",\n        \"birthDate\": \"2003-07-17T00:00:00\",\n        \"phone\": \"036164096\",\n        \"cellPhone\": \"0533162293\",\n        \"positiveResultDate\": \"2022-02-16T00:00:00\",\n        \"recoveryDate\": \"2022-02-26T00:00:00\",\n        \"vaccinations\": []\n    },\n    {\n        \"memberId\": \"435678555\",\n        \"firstName\": \"Tali\",\n        \"lastName\": \"Perla\",\n        \"address\": \"Daniel, 20, Bnei Brack\",\n        \"birthDate\": \"2003-07-17T00:00:00\",\n        \"phone\": \"036164096\",\n        \"cellPhone\": \"0533162293\",\n        \"positiveResultDate\": \"2022-02-16T00:00:00\",\n        \"recoveryDate\": \"2022-02-26T00:00:00\",\n        \"vaccinations\": []\n    },\n    {\n        \"memberId\": \"444333565\",\n        \"firstName\": \"Tali\",\n        \"lastName\": \"Perla\",\n        \"address\": \"Daniel, 20, Bnei Brack\",\n        \"birthDate\": \"2003-07-17T00:00:00\",\n        \"phone\": null,\n        \"cellPhone\": \"0533162293\",\n        \"positiveResultDate\": \"2022-02-16T00:00:00\",\n        \"recoveryDate\": \"2022-02-26T00:00:00\",\n        \"vaccinations\": []\n    },\n    {\n        \"memberId\": \"456475634\",\n        \"firstName\": \"s\",\n        \"lastName\": \"s\",\n        \"address\": \"daniel, 20, bnei brack\",\n        \"birthDate\": \"2005-03-26T00:00:00\",\n        \"phone\": \"0533142253\",\n        \"cellPhone\": null,\n        \"positiveResultDate\": null,\n        \"recoveryDate\": null,\n        \"vaccinations\": [\n            {\n                \"vaccinationId\": 7,\n                \"memberId\": \"456475634\",\n                \"manufacturerId\": 2,\n                \"vaccinationDate\": \"2024-03-26T00:00:00\"\n            }\n        ]\n    },\n    {\n        \"memberId\": \"456868458\",\n        \"firstName\": \"Tali\",\n        \"lastName\": \"Perla\",\n        \"address\": \"Daniel, 20, Bnei Brack\",\n        \"birthDate\": \"2003-07-17T00:00:00\",\n        \"phone\": \"036164096\",\n        \"cellPhone\": \"0533162293\",\n        \"positiveResultDate\": \"2022-02-16T00:00:00\",\n        \"recoveryDate\": \"2022-02-26T00:00:00\",\n        \"vaccinations\": []\n    },\n    {\n        \"memberId\": \"546354623\",\n        \"firstName\": \"Tali\",\n        \"lastName\": \"Perla\",\n        \"address\": \"Daniel, 20, Bnei Brack\",\n        \"birthDate\": \"2003-07-17T00:00:00\",\n        \"phone\": \"036164096\",\n        \"cellPhone\": null,\n        \"positiveResultDate\": \"2022-02-16T00:00:00\",\n        \"recoveryDate\": \"2022-02-26T00:00:00\",\n        \"vaccinations\": []\n    },\n    {\n        \"memberId\": \"653784909\",\n        \"firstName\": \"Tali\",\n        \"lastName\": \"Perla\",\n        \"address\": \"Daniel, 20, Bnei Brack\",\n        \"birthDate\": \"2003-07-17T00:00:00\",\n        \"phone\": \"036164096\",\n        \"cellPhone\": \"0533162293\",\n        \"positiveResultDate\": \"2022-02-16T00:00:00\",\n        \"recoveryDate\": \"2022-02-26T00:00:00\",\n        \"vaccinations\": []\n    },\n    {\n        \"memberId\": \"654384222\",\n        \"firstName\": \"Tali\",\n        \"lastName\": \"Perla\",\n        \"address\": \"Daniel, 20, Bnei Brack\",\n        \"birthDate\": \"2003-07-17T00:00:00\",\n        \"phone\": \"036164096\",\n        \"cellPhone\": \"0533162293\",\n        \"positiveResultDate\": \"2022-02-16T00:00:00\",\n        \"recoveryDate\": \"2022-02-26T00:00:00\",\n        \"vaccinations\": []\n    },\n    {\n        \"memberId\": \"654738444\",\n        \"firstName\": \"Tali\",\n        \"lastName\": \"Perla\",\n        \"address\": \"Daniel, 20, Bnei Brack\",\n        \"birthDate\": \"2003-07-17T00:00:00\",\n        \"phone\": \"036164096\",\n        \"cellPhone\": \"0533162293\",\n        \"positiveResultDate\": \"2022-02-16T00:00:00\",\n        \"recoveryDate\": \"2022-02-26T00:00:00\",\n        \"vaccinations\": []\n    },\n    {\n        \"memberId\": \"674283444\",\n        \"firstName\": \"Tali\",\n        \"lastName\": \"Perla\",\n        \"address\": \"Daniel, 20, Bnei Brack\",\n        \"birthDate\": \"2003-07-17T00:00:00\",\n        \"phone\": \"036164096\",\n        \"cellPhone\": \"0533162293\",\n        \"positiveResultDate\": \"2022-02-16T00:00:00\",\n        \"recoveryDate\": \"2022-02-26T00:00:00\",\n        \"vaccinations\": []\n    },\n    {\n        \"memberId\": \"674839645\",\n        \"firstName\": \"Tali\",\n        \"lastName\": \"Perla\",\n        \"address\": \"Daniel, 20, Bnei Brack\",\n        \"birthDate\": \"2003-07-17T00:00:00\",\n        \"phone\": \"6\",\n        \"cellPhone\": null,\n        \"positiveResultDate\": \"2022-02-16T00:00:00\",\n        \"recoveryDate\": \"2022-02-26T00:00:00\",\n        \"vaccinations\": []\n    },\n    {\n        \"memberId\": \"684725694576\",\n        \"firstName\": \"Tali\",\n        \"lastName\": \"Perla\",\n        \"address\": \"Daniel, 20, Bnei Brack\",\n        \"birthDate\": \"2003-07-17T00:00:00\",\n        \"phone\": \"036164096\",\n        \"cellPhone\": \"0533162293\",\n        \"positiveResultDate\": \"2022-02-16T00:00:00\",\n        \"recoveryDate\": \"2022-02-26T00:00:00\",\n        \"vaccinations\": []\n    },\n    {\n        \"memberId\": \"76543\",\n        \"firstName\": \"Tali\",\n        \"lastName\": \"Perla\",\n        \"address\": \"Daniel, 20, Bnei Brack\",\n        \"birthDate\": \"2003-07-17T00:00:00\",\n        \"phone\": \"036164096\",\n        \"cellPhone\": \"0533162293\",\n        \"positiveResultDate\": \"2022-02-16T00:00:00\",\n        \"recoveryDate\": \"2022-02-26T00:00:00\",\n        \"vaccinations\": []\n    },\n    {\n        \"memberId\": \"87608\",\n        \"firstName\": \"f\",\n        \"lastName\": \"f\",\n        \"address\": \"daniel\",\n        \"birthDate\": \"2024-03-22T00:00:00\",\n        \"phone\": \"0533162293\",\n        \"cellPhone\": \"035263846\",\n        \"positiveResultDate\": null,\n        \"recoveryDate\": null,\n        \"vaccinations\": []\n    }\n]"
 						}
 					]
-				},
-				{
-					"name": "http://localhost:5001/Members",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"address\": \"Daniel, 20, Bnei Brack\",\r\n    \"birthDate\": \"2003-07-17\",\r\n    \"firstName\": \"Tali\",\r\n    \"lastName\": \"Perla\",\r\n    \"memberId\": \"674283444\",\r\n    \"phone\": \"036164096\",\r\n    \"cellPhone\": \"0533162293\",\r\n    \"positiveResultDate\": \"2022-02-16\",\r\n    \"recoveryDate\": \"2022-02-26\"\r\n}"
-						},
-						"url": {
-							"raw": "http://localhost:5001/Members",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "5001",
-							"path": [
-								"Members"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "http://localhost:5001/Members",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"name": "Content-Type",
-								"value": "multipart/form-data",
-								"type": "text"
-							},
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
-						"url": {
-							"raw": "http://localhost:5001/Members",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "5001",
-							"path": [
-								"Members"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "http://localhost:5001/Members/CreateMember",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"name": "Content-Type",
-								"value": "application/json",
-								"type": "text"
-							},
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"address\": \"Daniel, 20, Bnei Brack\",\r\n    \"birthDate\": \"2003-07-17\",\r\n    \"firstName\": \"Tali\",\r\n    \"lastName\": \"Perla\",\r\n    \"memberId\": \"654384222\",\r\n    \"phone\": \"036164096\",\r\n    \"cellPhone\": \"0533162293\",\r\n    \"positiveResultDate\": \"2022-02-16\",\r\n    \"recoveryDate\": \"2022-02-26\"\r\n}"
-						},
-						"url": {
-							"raw": "http://localhost:5001/Members/CreateMember",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "5001",
-							"path": [
-								"Members",
-								"CreateMember"
-							]
-						}
-					},
-					"response": []
 				}
 			]
 		},
@@ -1532,7 +1420,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"manufacturerId\": \"3\",\n  \"memberId\": \"325324713\",\n  \"vaccinationDate\": \"2024-02-01\"\n}",
+									"raw": "{\n  \"manufacturerId\": \"1\",\n  \"memberId\": \"325324713\",\n  \"vaccinationDate\": \"2024-02-01\"\n}",
 									"options": {
 										"raw": {
 											"headerFamily": "json",
@@ -1635,64 +1523,6 @@
 							],
 							"cookie": [],
 							"body": "{\n    \"type\": \"https://tools.ietf.org/html/rfc7231#section-6.5.1\",\n    \"title\": \"One or more validation errors occurred.\",\n    \"status\": 400,\n    \"traceId\": \"00-5b0a842db325fdd420006bebba0de457-2728e7d52e47c7c2-00\",\n    \"errors\": {\n        \"MemberId\": [\n            \"Member ID is required\"\n        ]\n    }\n}"
-						},
-						{
-							"name": "/Vaccinations-InValidManufacturerID-Error",
-							"originalRequest": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									},
-									{
-										"key": "Accept",
-										"value": "application/json"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n  \"manufacturerId\": \"67\",\n  \"memberId\": \"325324713\",\n  \"vaccinationDate\": \"2024-02-01\"\n}",
-									"options": {
-										"raw": {
-											"headerFamily": "json",
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "{{baseUrl}}/Vaccinations",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"Vaccinations"
-									]
-								}
-							},
-							"status": "Internal Server Error",
-							"code": 500,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Date",
-									"value": "Tue, 26 Mar 2024 23:43:33 GMT"
-								},
-								{
-									"key": "Server",
-									"value": "Kestrel"
-								},
-								{
-									"key": "Transfer-Encoding",
-									"value": "chunked"
-								}
-							],
-							"cookie": [],
-							"body": "\"Error: Could not save changes. Please configure your entity type accordingly.\""
 						},
 						{
 							"name": "/Vaccinations-FutureVaccinationDate-Error",

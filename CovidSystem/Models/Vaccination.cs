@@ -20,7 +20,6 @@ public class Vaccination
 
     [Required(ErrorMessage = "Vaccination date is required")]
     [DataType(DataType.Date)]
-    [ValidateDateInPast(ErrorMessage = "Vaccination date must be in the past")]
     public DateTime VaccinationDate { get; set; }
 
     // Navigation property for member
@@ -28,18 +27,6 @@ public class Vaccination
     public Member? Member { get; set; } = null;
     [JsonIgnore]
     public Manufacturer? Manufacturer { get; set; } = null;
-}
-// Custom validation attribute to ensure the date is in the past.
-public class ValidateDateInPastAttribute : ValidationAttribute
-{
-    public override bool IsValid(object value)
-    {
-        if (value is DateTime date)
-        {
-            return date <= DateTime.Today;
-        }
-        return false;
-    }
 }
 #pragma warning restore CS8618
 

@@ -7,7 +7,7 @@ namespace CovidSystem.DbContexts
         public CovidDbContext(DbContextOptions<CovidDbContext> options) : base(options)
         {
         }
-        // Define DbSet properties for your entities
+        // Define DbSet properties for entities
         public DbSet<Member> Members { get; set; }
         public DbSet<Manufacturer> Manufacturers { get; set; }
         public DbSet<Vaccination> Vaccinations { get; set; }

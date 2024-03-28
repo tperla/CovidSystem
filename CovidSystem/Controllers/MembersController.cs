@@ -11,15 +11,15 @@ using System.Threading.Tasks;
 public class MembersController : ControllerBase
 {
     private readonly CovidDbContext _context;
-    private readonly IMemberValidationService _memberValidationService;
+    private readonly IValidationService _ValidationService;
     private readonly IImageService _imageService;
-    // Constructor injecting CovidDbContext, IMemberValidationService, and IImageService
+    // Constructor injecting CovidDbContext, IValidationService, and IImageService
     public MembersController(CovidDbContext context,
-        IMemberValidationService memberValidationService,
+        IValidationService validationService,
         IImageService imageService)
     {
         _context = context;
-        _memberValidationService = memberValidationService;
+        _ValidationService = validationService;
         _imageService = imageService;
     }
 
@@ -37,7 +37,7 @@ public class MembersController : ControllerBase
     [HttpPost("CreateMember")]
     public async Task<ActionResult<Member>> CreateMember(Member member)
     {
-        var validationResults = _memberValidationService.ValidateMember(member);
+        var validationResults = _ValidationService.ValidateMember(member);
         if (validationResults.Any())
         {
             return BadRequest(validationResults);

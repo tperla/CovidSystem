@@ -10,16 +10,19 @@ using System.Threading.Tasks;
 public class VaccinationsController : ControllerBase
 {
     private readonly CovidDbContext _context;
-    public VaccinationsController(CovidDbContext context)
+    private readonly IValidationService _ValidationService;
+    public VaccinationsController(CovidDbContext context, IValidationService validationService)
     {
         _context = context;
+        _ValidationService = validationService;
     }
     [HttpPost]
     public async Task<ActionResult<Vaccination>> CreateVaccination(Vaccination vaccination)
     {
-        if (!ModelState.IsValid)
+        var validationResults = _ValidationService.ValidateVaccination(vaccination);
+        if (validationResults.Any())
         {
-            return BadRequest(ModelState);
+            return BadRequest(validationResults);
         }
         try
         {

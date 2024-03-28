@@ -1,6 +1,7 @@
 using CovidSystem.DbContexts;
 using CovidSystem.Services;
 using Microsoft.EntityFrameworkCore;
+using System.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,7 +16,7 @@ builder.Services.AddDbContext<CovidDbContext>(options =>
     });
 
 // Add your validation service registration
-builder.Services.AddScoped<IMemberValidationService, MemberValidationService>();
+builder.Services.AddScoped<IValidationService, ValidationService>();
 builder.Services.AddScoped<IImageService, ImageService>();
 builder.Services.AddScoped<ISummeryDataService, SummeryDataService>();
 

@@ -1,10 +1,6 @@
 ﻿using CovidSystem.DbContexts;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Http;
-using System;
-using System.ComponentModel.DataAnnotations;
-using System.Threading.Tasks;
 
 [ApiController]
 [Route("[controller]")]

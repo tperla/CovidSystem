@@ -1,7 +1,6 @@
 using CovidSystem.DbContexts;
 using CovidSystem.Services;
 using Microsoft.EntityFrameworkCore;
-using System.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
